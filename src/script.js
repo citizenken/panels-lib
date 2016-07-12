@@ -18,7 +18,6 @@ Script.prototype.loadConfig = function(configSection) {
 Script.prototype.fromBlob = function(blob) {
     var element, i, j, len, line, lines, ref;
     lines = blob.split('\n');
-    console.log(lines);
     i = 0;
     while (i < lines.length) {
       line = lines[i];
