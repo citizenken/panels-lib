@@ -2,7 +2,7 @@ var comicbook = {
     elements: {
         sceneHeading: {
             strategy: 'regex',
-            regex: '(page|PAGE).*(\\([0-9A-Za-z]+ (panels|PANELS)\\))?',
+            regex: '(page|PAGE|Page).*(\\([0-9A-Za-z]+ (panels|PANELS)\\))?',
             element: 'h2'
         },
         panel: {
