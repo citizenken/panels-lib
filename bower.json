@@ -4,7 +4,7 @@
     "Ken Petti <ken.petti@cloudlock.com>"
   ],
   "description": "A parser for comicbook scripts",
-  "main": "dist/panels.min.js",
+  "main": "dist/panels.js",
   "license": "MIT",
   "homepage": "",
   "ignore": [
