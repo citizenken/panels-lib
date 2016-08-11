@@ -74,11 +74,17 @@ Renderer.prototype.renderElements = function(cb) {
       }
       i++;
     }
-    return cb({
-      html: {
-        script: self.body.join('')
-      }
-    });
+
+    var script = self.body.join('');
+    if (cb) {
+      return cb({
+        html: {
+          script: script
+        }
+      });
+    } else {
+      return script;
+    }
 };
 
 Renderer.prototype.renderElement = function(element) {
