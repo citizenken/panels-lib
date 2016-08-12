@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/panels.min.js': ['src/**/*.js']
+          'dist/panels-lib.min.js': ['src/**/*.js']
         }
       }
     },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     concat: {
       dev: {
         src: ['src/**/*.js'],
-        dest: 'dist/panels.js',
+        dest: 'dist/panels-lib.js',
       }
     }
   });

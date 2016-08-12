@@ -1,7 +1,7 @@
 {
-  "name": "panels",
+  "name": "panels-lib",
   "authors": [
-    "Ken Petti <ken.petti@cloudlock.com>"
+    "Ken Petti <kennethpetti@gmail.com>"
   ],
   "description": "A parser for comicbook scripts",
   "main": "dist/panels.js",
