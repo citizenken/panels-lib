@@ -5,7 +5,7 @@
     "Ken Petti <kennethpetti@gmail.com>"
   ],
   "description": "A parser for comicbook scripts",
-  "main": "dist/panels.js",
+  "main": "dist/panels-lib.js",
   "license": "MIT",
   "homepage": "",
   "ignore": [
