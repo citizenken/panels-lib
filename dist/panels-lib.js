@@ -219,8 +219,7 @@ Renderer.prototype.removeElements = function(elements) {
 
 
 var config = window.panelsConfig,
-    Parser = window.Parser,
-    _ = window.lodash;
+    Parser = window.Parser;
 
 function Script(configSection) {
     this.config = null;
@@ -262,7 +261,7 @@ Script.prototype.fromBlob = function(blob) {
 Script.prototype.addElementToList = function(element) {
     element.id = element.type + '_' + this.elements.length;
     this.elements.push(element);
-    if (!_.isArray(this.elementGroups[element.type])) {
+    if (!Array.isArray(this.elementGroups[element.type])) {
       this.elementGroups[element.type] = [];
     }
     return this.elementGroups[element.type].push(element);
