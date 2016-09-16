@@ -3,7 +3,9 @@ var comicbook = {
         sceneHeading: {
             strategy: 'regex',
             regex: '(page|PAGE|Page).*(\\([0-9A-Za-z]+ (panels|PANELS)\\))?',
-            element: 'h2'
+            element: 'h2',
+            template: 'Page # (# Panels)',
+            force: '!'
         },
         panel: {
             strategy: 'regex',
@@ -11,7 +13,9 @@ var comicbook = {
             element: 'strong',
             subElements: {
                 action: '.*'
-            }
+            },
+            template: 'Panel #. <action>',
+            force: '>'
         },
         character: {
             strategy: 'regex',
@@ -20,7 +24,9 @@ var comicbook = {
             subElements: {
                 paren: '( ?\\([A-Z]+\\))?',
                 dialogue: '.*'
-            }
+            },
+            template: '# <name>: <dialogue>',
+            force: '@'
         },
         dialogue: {
             strategy: 'preceeding',
